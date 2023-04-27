@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 body {
-    background: #93fbff;
+    background: #96ebd4;
     color: #ebfffc;
+    font-family: 'Josefin Sans', sans-serif;
 }
+
 .card {
     width: 90%;
-    max-width: 850px;
+    max-width: 750px;
     margin: 100px auto 0;
     padding: 40px 35px;
     text-align: center;
@@ -69,16 +71,18 @@ body {
 .weather img {
     max-width: 100%;
     border-radius: 50px;
+
 }
 .weather-icon {
     width: 170px;
     margin-top: 30px;
-    animation: moving 3s linear infinite;
+    animation: moving 1.5s linear infinite alternate;
+    position: relative;
+
 }
 @keyframes moving {
-    50% {
-        transform: translatey(20deg);
-        /* margin-left: 10px; */
+    100% {
+        scale: 1.1;
     }
 }
 .weather h1 {

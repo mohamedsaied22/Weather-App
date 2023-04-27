@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,700;1,300;1,600&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
+
 </head>
 <body>
     <div class="card">
@@ -79,10 +83,10 @@
             weatherIcon.src = "images/clouds.png"
             } 
             else if (data.weather[0].main === "Clear"){
-            weatherIcon.src = "images/clouds.png"
+            weatherIcon.src = "images/clear.png"
             }
             else if (data.weather[0].main === "Rain"){
-            weatherIcon.src = "images/rain.png"
+            weatherIcon.src = "images/drizzle.png"
             }
             else if (data.weather[0].main === "Snow"){
             weatherIcon.src = "images/snow.png"
